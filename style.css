@@ -86,6 +86,7 @@ nav {
     color: #fff;
     text-align: center;
     font-weight: bold;
+    text-shadow: 2px 2px 1px black;
 }
 
 .main-banner h1 {
@@ -169,6 +170,7 @@ nav {
     max-width: 275px;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .plan ul {
@@ -335,5 +337,38 @@ footer {
 @media screen and (max-width: 900px) {
     .plans-container, .specialties-container ul {
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .navbar-items li {
+        font-size: 12px;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .searchdomain-container, .contact-container {
+        padding: 3em 2em;
+    }
+
+    .container .searchdomain-container input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-container input, .contact-container textarea {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
     }
 }
